@@ -1,0 +1,34 @@
+To find the files 
+
+find -type f -iname <name of the file>
+
+example :- 
+
+find -type f -iname abc.cpp
+
+// the above command find file abc.cpp
+-----------------------------------------------------
+to count the number of lines in all the java  files
+
+find . -name '*.java' | xargs cat | wc -l
+
+it gives single count 
+
+-----------------------------------------------------
+
+to find the individual count 
+
+find -type f -iname *.java  | xargs wc -l
+
+------------------------------------------------------
+
+to search the string in specific file 
+below command will find the string 'agent' in file end
+with name 'Entity.java'
+
+find . -name *Entity.java | xargs grep agent 
+
+-------------------------------------------------------
+
+
+
